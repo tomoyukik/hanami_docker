@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  app:
+    build: . 
+    environment:
+      HANAMI_ENV: development
+      BUNDLE_PATH: /bookshelf/vendor/bundle
+    volumes:
+      - ./bookshelf:/bookshelf
+    ports:
+      - 2300
