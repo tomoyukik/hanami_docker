@@ -1,0 +1,9 @@
+version: 2
+
+option:
+  project_root: config_path
+
+syncs:
+  bookshelf-volume:
+    src: ./bookshelf
+    sync_strategy: unison
