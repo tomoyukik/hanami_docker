@@ -1,5 +1,6 @@
 FROM ruby:2.6.3
 
+RUN apt-get update && apt-get install sqlite3 libsqlite3-dev -y
 RUN gem install bundler
 ENV BUNDLE_PATH /app/vendor/bundle
 WORKDIR /app
