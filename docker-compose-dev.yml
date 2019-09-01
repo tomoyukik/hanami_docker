@@ -1,11 +1,11 @@
 version: '3.7'
 
 volumes:
-  bookshelf-volume:
+  app-volume:
     external: true
 
 services:
   app:
     volumes:
-      - bookshelf-volume:/bookshelf
+      - app-volume:/bookshelf
 
