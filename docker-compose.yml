@@ -9,7 +9,7 @@ services:
       HANAMI_ENV: development
       BUNDLE_APP_CONFIG: /app/.bundle
     volumes:
-      - .:/bookshelf
+      - .:/app
     ports:
       - 2300
     command: 'bundle exec hanami server --host 0.0.0.0'
